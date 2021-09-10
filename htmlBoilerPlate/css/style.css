@@ -1,0 +1,104 @@
+/**
+ * fil: css/style.css
+ **/
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --black: #000000;
+  --white: #ffffff;
+  --red: #ef2d02;
+
+/* navigationsfarve */
+ --navfarve: #ffffff;
+
+  /* fonte */
+}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+/* font-family: 'Kaisei HarunoUmi', serif; */
+
+
+/* Her bruges en variabel: --blue */
+body {
+  color: black;
+  background-image: url(https://images.unsplash.com/photo-1540057357560-ed0ed423cdcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80);
+}
+
+/* Layout */
+
+
+/** Links */
+a {
+color: var(--red);
+text-decoration: none;
+}
+
+/* Hover farve */
+a:hover {
+background-color: var(--red);
+color: var(--white)
+}
+
+/* Remove bullets aka prikker før menupunkter */
+nav ul li {
+  list-style-type: none;
+}
+
+/* Inline menu aka horizontal menu */
+nav ul li {
+  display: inline;
+  list-style: none;
+  float: left;
+  margin-right: 0.5em;
+}
+
+/* Skrifttyper */
+h1 {
+  font-family: 'Kaisei HarunoUmi', serif;
+  color: black;
+  text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Kaisei HarunoUmi', serif;
+  color: var(--white);
+}
+
+
+/* Typografi */
+h2 {
+  border-bottom: 2px solid var(--blue);
+  background-color: var(--black);
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  background-color: var(--black);
+  color: var(--red);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+  }
+
+/* tekst bredde */
+p {
+  margin-bottom: 37px;
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+/* wrap (fra index.html) padding */
+#wrap {
+  width: 500px;
+  margin: auto;
+  background-color: var(--white)
+}
+
+/* Galleriet styles */
+img {
+  max-width: 25%;
+  float: left;
+}
